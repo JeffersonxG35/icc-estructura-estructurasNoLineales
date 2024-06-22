@@ -1,18 +1,15 @@
-## Getting Started
+# Autor
+Leo Vásconez y Jefferson Guerrero
+## Versión 2.2.1
+Se agrega archivos a la librería "lib", también se añadió archivos a la carpeta "test" con la cual se pone a prueba los métodos realizados dentro de las carpetas que fueron creadas en el "main" con el mismo nombre de las carpetas del "test" y que a su vez estas contienen cada una sus clases en donde se encuentran alojados los métodos, esto con la finalidad de que el test funcione correctamente. 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+El funcionamiento de cada uno de los métodos creados son los siguientes: 
+-> En la clase InsertBST, si el árbol está vacío se creará un nuevo nodo con el valor y lo devuelve como la nueva raíz. Si el valor a insertar es menor que el valor del nodo actual, inserta el valor en el subárbol izquierdo. Si el valor a insertar es mayor que el valor del nodo actual, inserta el valor en el subárbol derecho por último, el return retorna el nodo raíz actual
 
-## Folder Structure
+-> En la clase InvertBinaryTree, si el árbol está vacío (la raíz es null), nos devolverá null. Además, llama recursivamente a invertTree en el subárbol izquierdo y derecho, de manera que intercambia los subárboles izquierdo y derecho del nodo actual. Retorna el nodo raíz, que ahora tiene sus subárboles izquierdo y derecho invertidos.
 
-The workspace contains two folders by default, where:
+-> En la clase ListLeves, el código recorre el árbol nivel por nivel y guarda los nodos de cada nivel en listas separadas dentro de una lista principal. Se usó una "cola" para poder ir guardando los nodos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-> En la clase Depth, el código recorre el árbol y devuelve la mayor profundidad encontrada desde la raíz hasta el final del mismo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
