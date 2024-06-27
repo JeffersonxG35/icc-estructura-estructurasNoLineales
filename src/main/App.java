@@ -1,9 +1,6 @@
 package main;
 
-import main.Ejercicio_01_insert.InsertBST;
-import main.Materia.Controllers.ArbolBinario;
-import main.Materia.Models.Node;
-
+import main.Materia.Controllers.AVLTree;
 /*
  *                1
  *        2               3
@@ -12,7 +9,7 @@ import main.Materia.Models.Node;
  */
 public class App {
     public static void main(String[] args) throws Exception {
-        ArbolBinario arbolBinario = new ArbolBinario();
+       /*  ArbolBinario arbolBinario = new ArbolBinario();
         Node nodeRoot = new Node(1);
         nodeRoot.setLeft(new Node(2));
         nodeRoot.setRight(new Node(3));
@@ -36,6 +33,14 @@ public class App {
         arbolBinario.posOrderRecursivo(nodeRoot);
         System.out.println();
         arbolBinario.inOrderRecursivo(nodeRoot);
+        */
 
+       AVLTree tree = new AVLTree();
+
+        int[] values = { 10, 20, 15, 24, 9, 8, 21, 23, 50, 25 };
+
+        for (int value : values) {
+            tree.insert(value);
+        }
     }
 }
