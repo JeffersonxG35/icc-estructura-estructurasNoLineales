@@ -15,4 +15,6 @@ El funcionamiento de cada uno de los métodos creados son los siguientes:
 ## Versión 2.2.2
 Se añade la clase AVLtree dentro de la carpeta "Controllers" la misma que contiene el codigo para poder balancear un árbol, además se modificó la clase Node en donde declaramos una nueva variable privada de tipo int llamada "height" y luego hicimos su respectivo getter and setter para que logre funcionar correctamente nuestro código, ya que esta variable la utilizamos dentro de la clase AVLTree. 
 
+## Versión 2.2.3
+Se añade la clase Graph con sus respetivos métodos dentro de la carpeta "Controllers" al igual que la clase NodeGraph, que se añadió a la carpeta "Models", también se añadió la clase "Sets" dentro de "Controllers" 
 
